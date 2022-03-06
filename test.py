@@ -1,19 +1,13 @@
 import smtplib
 from email.mime.text import *
 
-<<<<<<< HEAD
+
 emailHost = ""
 emailAccount = ""
 emailName = ""
 emailPassword = ""
-emailReceiver = ''
-=======
-emailHost = "smtp.qq.com"
-emailAccount = "709297842@qq.com"
-emailName = "sjsun"
-emailPassword = "uodwmcsjpcggbdef"
-emailReceiver = 'sjsun@stu.shmtu.edu.cn'
->>>>>>> origin/main
+emailReceiver = ""
+
 message = MIMEText('test', 'plain', 'utf-8')
 
 message['Subject'] = '天气预报'
