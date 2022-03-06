@@ -1,7 +1,6 @@
 import smtplib
 import time
 from email.mime.text import *
-
 import bs4
 import requests
 import xpinyin as xp

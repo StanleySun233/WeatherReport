@@ -3,15 +3,12 @@ import tkinter as tk
 import tkinter.messagebox
 from email.mime.text import *
 from tkinter import ttk
-
 import bs4
 import requests
 import xpinyin as xp
 
 global loginFlag, globalAccount, data, globalCity
-
 loginFlag = 0
-
 emailAccount = ""
 emailPassword = ""
 
