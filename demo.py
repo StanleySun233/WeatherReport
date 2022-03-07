@@ -1,3 +1,4 @@
+import datetime
 import smtplib
 import tkinter as tk
 import tkinter.messagebox
@@ -139,7 +140,8 @@ def sendWeatherEmailButtonPress():
     val = int(sendSpiltCombobox.get())
     text = ""
     for i in range(int(chooseDay2SendCombobox.get())):
-        text += "日期：\t" + data[i][0] + "\t星期：\t" + data[i][1] + "\t天气：\t" + data[i][2] + "\t温度：\t" + data[i][3] + '\n'
+        text += "日期：\t" + data[i][0] + "\t星期：\t" + data[i][1] + "\t天气：\t" + data[i][2] + "\t温度：\t" + data[i][
+            3] + " " + str(datetime.datetime.today()) + '\n'
 
     ### 输入你自己的账号信息 ###
     emailHost = ""

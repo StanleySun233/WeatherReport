@@ -88,8 +88,8 @@ while True:
         tm = int(sendSheet[i][3]) * 3600
         if sendTime[i] * tm - int(nowTime - begTime) < 0:
             sendTime[i] += 1
-            data = getWeatherData(sendSheet[i][1])
-            sendEmail(data[:int(sendSheet[i][2])], sendSheet[i][0])
+            # data = getWeatherData(sendSheet[i][1])
+            # sendEmail(data[:int(sendSheet[i][2])], sendSheet[i][0])
             print(sendSheet[i], "发送成功")
     print("一次循环执行完毕，用时{}秒".format(time.time() - nowTime))
     time.sleep(10)
