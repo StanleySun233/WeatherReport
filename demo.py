@@ -167,7 +167,7 @@ def sendWeatherEmailButtonPress():
 
     if val != 0:
         writeSendMessage(
-            emailReceiver + " " + weatherFindEntry.get() + " " + chooseDay2SendCombobox.get() + " " + str(val) + '\n')
+            emailReceiver + " " + weatherFindEntry.get() + " " + chooseDay2SendCombobox.get() + " " + str(val) + " " + str(datetime.datetime.today()) +'\n')
 
 
 loginWindow = tk.Tk()
